@@ -44,6 +44,7 @@ news = soup.find_all(class_="news-title")
 print(news[0].text) 
 
 
+
 #6
 import requests
 from bs4 import BeautifulSoup
