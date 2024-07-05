@@ -5,6 +5,7 @@ matn_uz = "Python - dunyodagi eng mashxur dasturlash tili"
 tarjima = tarjimon.translate(matn_uz)
 print(tarjima.text)
 
+
 #2
 tarjima_ru = tarjimon.translate(matn_uz, dest='ru')
 print(tarjima_ru.text)
@@ -13,12 +14,14 @@ tarjima_uz = tarjimon.translate(matn_en, dest='uz')
 print(tarjima_uz.text)
 tarjima_uz = tarjimon.translate(matn_en, src='uz', dest='uz')
 
+
 #3
 import requests
 from pprint import pprint
 manzil= "https://kun.uz/news/main"
 r = requests.get(manzil)
 pprint(r.text)
+
 
 #4
 import requests
@@ -29,6 +32,7 @@ url = f"https://v6.exchangerate-api.com/v6/{API_KEY}/pair/{currency}/UZS"
 response = requests.get(url)
 kurs = response.json()['conversion_rate']
 print(f"1 dollar kursi {kurs} so'mga teng")
+
 
 #5
 import requests
